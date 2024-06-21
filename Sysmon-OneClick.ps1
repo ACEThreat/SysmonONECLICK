@@ -1,13 +1,13 @@
 <#
 .SYNOPSIS
-    [This script is the primary installer of OneClick-Sysmon logger]
+    [This script is the primary installer of SysmonONECLICK logger]
 .DESCRIPTION
     [ENTER A COMPLETE DESCRIPTION OF THE SCRIPT (i.e. checks version, updates config, installs sysmon, etc...)]
 .NOTES
-    Version:        1.04
-    Author:         ACETHREAT with assistance by yours truely (REDACTED)
-    Creation Date:  5/17/23 ||| Update: 10/11/23
-    Purpose/Change: Initial SYSMON installer script
+    Version:        1.00
+    Author:         @ACETHREAT
+    Creation Date:  5/17/23 ||| Update: 6/11/24
+    Purpose/Change: Updated for public release.
    
 $binary = [convert]::ToBase64String((Get-Content -path "FILEPATH\FILENAME.ZIP" -Encoding byte))
 $binary | Out-File ("FILEPATH\FILENAME.txt")
@@ -44,7 +44,7 @@ $OS64bit = [Environment]::Is64BitOperatingSystem
 $ScriptDir = Split-Path $script:MyInvocation.MyCommand.Path
 $SysmonLogDir = "C:\Windows\SYSMON-OneClick"
 $LogFile =  "$SysmonLogDir\${LogDate}_${Name}_SYSMON.log"
-$ScriptVersion = 1.1
+$ScriptVersion = 1.0
 $installsysmon = $True
 $windowsSystemVersion = (Get-CimInstance -ClassName Win32_OperatingSystem).Version
 
@@ -53,7 +53,7 @@ $Sysmonversion = '15.14'
 $Sysmon64Bin = "Sysmon64.exe"
 $Sysmon32Bin = "Sysmon.exe"
 $SysmonConfig = "sysmon-config.xml"
-$sysmonConfigversion = 1.1
+$sysmonConfigversion = 1.0
 $keyPath = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Sysmon"
 $valueName = "ConfigurationFile"
 
