@@ -121,7 +121,7 @@ Function windowsVersionCheck {
 windowsVersionCheck 
 ###############################################################################
 #region Base64 decode SYSMON, write ZIP file to current script directory, and #
-# extracts the ZIP files the directory C:\Windows\33-SYSMON                   #
+# extracts the ZIP files the directory C:\Windows\Sysmon-OneClick             #
 ###############################################################################
 
 Write-Host -ForegroundColor Yellow "Decoding and writing ZIP file 'Sysmon.zip' to current script directory '${ScriptDir}'."
@@ -156,7 +156,7 @@ If (!(Test-Path "$ScriptDir\Sysmon.zip")){
 	EXIT(1)
 }
 
-#Extracts the files from ZIP file Sysmon.zip to the directory C:\Windows\33-SYSMON\Tools
+#Extracts the files from ZIP file Sysmon.zip to the directory C:\Windows\Sysmon-OneClick\Tools
 Write-Host -ForegroundColor Yellow "Extracting additional required tools from file Sysmon.zip to $SysmonLogDir\Tools."
 Log-Write -LogPath $LogFile -LineValue "Extracting additional required tools from file Sysmon.zip to $SysmonLogDir\Tools."
 Expand-Archive -Path "$ScriptDir\Sysmon.zip" -DestinationPath "$SysmonLogDir\Tools\" -Force
