@@ -5,10 +5,24 @@
     This script uninstalls Sysmon, removes the Sysmon service, deletes Sysmon files,
     removes registry entries, and cleans up logs and directories created during installation.
 .NOTES
-    Version:        1.0
-    Author:         [Your Name]
-    Creation Date:  [Current Date]
-    Purpose:        Sysmon uninstallation and cleanup
+    Version:        1.00
+    Author:         @ACETHREAT
+    Creation Date:  6/24
+    Purpose/Change: Initial Creation
+   
+    Copyright 2024 ACEThreat
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
 #>
 
 # Define paths and variables
