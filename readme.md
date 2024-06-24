@@ -22,7 +22,13 @@ The `Sysmon-OneClick.ps1` script performs the following tasks:
 
 ### Running the Script
 
-#### NOTE: You MUST b64 encode the Sysmon.zip and a config file and paste them into the script. See my https://github.com/ACEThreat/Python-B64-Encoder for an easy b64 encoder.
+#### NOTE: You MUST b64 encode the Sysmon.zip and a config file and paste them into the script. See my https://github.com/ACEThreat/Python-B64-Encoder for an easy b64 encoder. 
+
+Paste the base64 in the following two variables:
+
+$sysmonzip = 
+$sysmonconfig = 
+
 
 To run the installer script, use the following command in PowerShell:
 
