@@ -4,7 +4,7 @@ This repository contains the primary installer script for SysmonONECLICK Logger,
 
 ## Description
 
-The `Sysmon-install.ps1` script performs the following tasks:
+The `Sysmon-OneClick.ps1` script performs the following tasks:
 - Checks the version of Windows and exits if the version is unsupported.
 - Decodes and writes necessary files from Base64 to the local directory.
 - Installs or updates Sysmon to the specified version.
