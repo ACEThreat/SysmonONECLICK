@@ -30,7 +30,7 @@ $sysmonzip =
 $sysmonconfig = 
 
 
-To run the installer script, use the following command in PowerShell:
+To run the installer script, use the following command in PowerShell (Must open an Administrator PowerShell instance):
 
 ```powershell
 powershell.exe -ExecutionPolicy Bypass -File C:\path\Sysmon-OneClick.ps1
